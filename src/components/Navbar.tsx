@@ -38,11 +38,7 @@ const Navbar = () => {
             {navItems.map((item) => (
               <button
                 key={item.name}
-                className={`px-2.5 py-2 text-sm leading-5 font-sans transition-colors ${
-                  item.active 
-                    ? 'text-white font-semibold' 
-                    : 'text-white/88 font-normal hover:text-white'
-                }`}
+                className="px-2.5 py-2 text-sm leading-5 font-sans text-white font-semibold transition-opacity hover:opacity-80"
               >
                 {item.name}
               </button>
@@ -82,11 +78,7 @@ const Navbar = () => {
                 {navItems.map((item) => (
                   <button
                     key={item.name}
-                    className={`text-left px-4 py-3 text-base transition-colors ${
-                      item.active 
-                        ? 'text-white font-semibold' 
-                        : 'text-white/88 font-normal hover:text-white'
-                    }`}
+                    className="text-left px-4 py-3 text-base text-white font-semibold transition-opacity hover:opacity-80"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
