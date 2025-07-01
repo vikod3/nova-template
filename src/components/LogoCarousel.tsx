@@ -1,45 +1,48 @@
 
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const LogoCarousel = () => {
-  const companies = [
-    { name: 'Digitech', font: 'font-semibold' },
-    { name: 'Netdot', font: 'font-bold' },
-    { name: 'Sparkweb', font: 'font-extrabold', hasIcon: true },
-    { name: 'Pixelpath', font: 'font-semibold', hasIcon: true },
-    { name: 'CodeLine', font: 'font-bold' }
+  // Array of 5 logo image paths (using placeholder images for now)
+  const logoImages = [
+    '/placeholder.svg',
+    '/placeholder.svg', 
+    '/placeholder.svg',
+    '/placeholder.svg',
+    '/placeholder.svg'
   ];
 
   // Triple the array for seamless looping
-  const repeatedCompanies = [...companies, ...companies, ...companies];
+  const tripleLogos = [...logoImages, ...logoImages, ...logoImages];
 
   return (
-    <div className="w-full bg-black overflow-hidden mt-20">
-      <div className="w-full py-24 flex flex-col justify-center items-center gap-12">
-        <div className="w-full max-w-7xl flex flex-col justify-start items-center gap-8">
-          <div className="w-full flex justify-center items-start gap-4 flex-wrap">
-            {repeatedCompanies.map((company, index) => (
-              <div
-                key={`${company.name}-${index}`}
-                className="px-6 py-5 rounded-full border border-white/20"
-                style={{
-                  background: 'linear-gradient(180deg, rgba(2, 7, 26, 0.04) 0%, rgba(2, 7, 26, 0.16) 100%)',
-                  boxShadow: '0px 4px 8px 1px rgba(244, 244, 254, 0.25) inset'
-                }}
-              >
-                <div className="flex justify-center items-center gap-2">
-                  {company.hasIcon && (
-                    <div className="w-7 h-8 bg-gray-400 rounded-sm" />
-                  )}
-                  <div className={`text-center text-gray-400 text-2xl ${company.font} leading-8`}>
-                    {company.name}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+    <div className="w-full overflow-hidden bg-background/50 backdrop-blur py-12 mt-20">
+      <motion.div 
+        className="flex space-x-16 gap-16"
+        initial={{ opacity: 0, x: '0%' }}
+        animate={{ 
+          opacity: 1, 
+          x: '-50%' 
+        }}
+        transition={{
+          opacity: { duration: 0.5, delay: 0.5 },
+          x: { 
+            duration: 15, 
+            repeat: Infinity, 
+            ease: 'linear',
+            delay: 0.5
+          }
+        }}
+      >
+        {tripleLogos.map((logoPath, index) => (
+          <img
+            key={index}
+            src={logoPath}
+            alt={`Logo ${index + 1}`}
+            className="h-8 object-contain flex-shrink-0"
+          />
+        ))}
+      </motion.div>
     </div>
   );
 };
