@@ -41,7 +41,7 @@ const FeaturesSection = () => {
                   </div>
                 </div>
                 <div className="self-stretch flex-1 flex items-center justify-center p-6">
-                  <img src="/lovable-uploads/b83a5e37-deef-435b-8cc2-ba4c3e283575.png" alt="Dashboard visualization" className="w-full h-full w-full " />
+                  <img src="/lovable-uploads/b83a5e37-deef-435b-8cc2-ba4c3e283575.png" alt="Dashboard visualization" className="w-full h-full w-contain " />
                 </div>
               </div>
             </div>
