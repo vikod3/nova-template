@@ -1,10 +1,7 @@
-
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
-
 const Footer = () => {
-  return (
-    <div className="w-full bg-black overflow-hidden flex flex-col justify-start items-center">
+  return <div className="w-full bg-black overflow-hidden flex flex-col justify-start items-center">
       <div className="w-full py-16 flex flex-col justify-center items-center gap-12">
         <div className="w-full max-w-[1216px] px-4 md:px-8 flex flex-col lg:flex-row justify-start items-start gap-8 lg:gap-8">
           {/* Brand Section */}
@@ -12,7 +9,7 @@ const Footer = () => {
             <div className="flex justify-start items-center gap-1.5">
               <div className="text-gray-100 text-xl font-semibold leading-[30px] font-sans">Webfluin</div>
               <div className="px-1 py-1.5 bg-transparent rounded border-2 border-indigo-400 flex justify-center items-center">
-                <div className="text-indigo-600 text-xs font-bold leading-[30px] font-sans">LAND</div>
+                <div className="text-indigo-600 text-xs font-bold leading-[10px] font-sans">LAND</div>
               </div>
             </div>
             <div className="text-gray-300 text-base font-normal leading-6 font-sans">
@@ -125,8 +122,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Footer;
