@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Star } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -161,7 +160,7 @@ const TestimonialsSection = () => {
 
 const TestimonialCard = ({ testimonial }: { testimonial: any }) => {
   return (
-    <div className="p-8 bg-gradient-to-b from-[rgba(196,227,255,0.10)] to-[rgba(196,227,255,0.02)] bg-black rounded-2xl border border-[#C4E3FF] flex flex-col gap-8 flex-shrink-0">
+    <div className="p-8 bg-gradient-to-b from-[rgba(196,227,255,0.10)] to-[rgba(196,227,255,0.02)] bg-black rounded-2xl border border-[rgba(255,255,255,0.12)] flex flex-col gap-8 flex-shrink-0">
       <div className="flex flex-col gap-8">
         <div className="flex gap-1">
           {[...Array(5)].map((_, i) => (
