@@ -1,3 +1,4 @@
+
 import React from 'react';
 const FeaturesSection = () => {
   return <div className="w-full h-full px-4 md:px-16 py-16 md:py-28 bg-black overflow-hidden flex flex-col justify-start items-center gap-12 md:gap-20">
@@ -19,10 +20,10 @@ const FeaturesSection = () => {
           <div className="self-stretch flex flex-col justify-start items-start gap-6 md:gap-8">
             <div className="self-stretch flex flex-col lg:flex-row justify-start items-start gap-6 md:gap-8">
               <div className="w-full lg:w-[864px] bg-gradient-to-b from-[#161A1E] to-[#08090A] overflow-hidden rounded-[32px] border border-white flex flex-col justify-start items-start min-h-[400px] md:min-h-0">
-                <div className="self-stretch h-48 md:h-[306px] flex items-center justify-center overflow-hidden">
-                  <img src="/lovable-uploads/7fa88b56-5484-49f5-a508-dfd60325bba4.png" alt="Analytics chart visualization" className="w-full h-full object-cover" />
+                <div className="self-stretch flex-1 flex items-end justify-center overflow-hidden">
+                  <img src="/lovable-uploads/7fa88b56-5484-49f5-a508-dfd60325bba4.png" alt="Analytics chart visualization" className="w-full h-auto object-contain" />
                 </div>
-                <div className="self-stretch p-6 md:p-12 flex flex-col justify-start items-start gap-6 md:gap-8 flex-1">
+                <div className="self-stretch p-6 md:p-12 flex flex-col justify-start items-start gap-6 md:gap-8">
                   <div className="w-full max-w-3xl flex flex-col justify-center items-center gap-2">
                     <div className="self-stretch flex flex-col justify-start items-start gap-4 md:gap-6">
                       <div className="self-stretch text-center text-white text-2xl md:text-4xl font-medium leading-tight md:leading-[41.60px] font-sans">Medium length section heading goes here</div>
@@ -32,7 +33,7 @@ const FeaturesSection = () => {
                 </div>
               </div>
               <div className="flex-1 self-stretch bg-gradient-to-b from-[#161A1E] to-[#08090A] overflow-hidden rounded-[32px] border border-white flex flex-col justify-start items-start min-h-[400px] md:min-h-0">
-                <div className="self-stretch h-48 md:h-[250px] p-6 md:p-8 flex flex-col justify-start items-start gap-4 md:gap-6">
+                <div className="self-stretch p-6 md:p-8 flex flex-col justify-start items-start gap-4 md:gap-6">
                   <div className="self-stretch flex flex-col justify-center items-center gap-2">
                     <div className="self-stretch flex flex-col justify-start items-start gap-3 md:gap-4">
                       <div className="self-stretch text-center text-white text-2xl md:text-2xl font-medium leading-tight md:leading-[41.60px] font-sans">Link Your Accounts</div>
@@ -40,8 +41,8 @@ const FeaturesSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch flex-1 flex items-center justify-center p-0 px-0 py-[0px]">
-                  <img src="/lovable-uploads/b83a5e37-deef-435b-8cc2-ba4c3e283575.png" alt="Dashboard visualization" className="w-full h-full object-contain self-end\n" />
+                <div className="self-stretch flex-1 flex items-end justify-center overflow-hidden">
+                  <img src="/lovable-uploads/b83a5e37-deef-435b-8cc2-ba4c3e283575.png" alt="Dashboard visualization" className="w-full h-auto object-contain" />
                 </div>
               </div>
             </div>
@@ -49,7 +50,7 @@ const FeaturesSection = () => {
           <div className="self-stretch flex flex-col justify-start items-start gap-6 md:gap-8">
             <div className="self-stretch flex flex-col lg:flex-row justify-start items-start gap-6 md:gap-8">
               <div className="flex-1 self-stretch bg-gradient-to-b from-[#161A1E] to-[#08090A] overflow-hidden rounded-[32px] border border-white flex flex-col justify-start items-start min-h-[400px] md:min-h-0">
-                <div className="self-stretch h-48 md:h-[260px] p-6 md:p-8 flex flex-col justify-start items-start gap-4 md:gap-6">
+                <div className="self-stretch p-6 md:p-8 flex flex-col justify-start items-start gap-4 md:gap-6">
                   <div className="self-stretch flex flex-col justify-center items-center gap-2">
                     <div className="self-stretch flex flex-col justify-start items-start gap-3 md:gap-4">
                       <div className="self-stretch text-center text-white text-2xl md:text-4xl font-medium leading-tight md:leading-[41.60px] font-sans">Integrate Your Data</div>
@@ -57,8 +58,8 @@ const FeaturesSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch flex-1 flex items-center justify-center p-4 py-0 px-0">
-                  <img src="/lovable-uploads/02d36b81-7505-4a5b-9e63-1735894bbb66.png" alt="Data integration visualization" className="w-full h-full object-contain" />
+                <div className="self-stretch flex-1 flex items-end justify-center overflow-hidden">
+                  <img src="/lovable-uploads/02d36b81-7505-4a5b-9e63-1735894bbb66.png" alt="Data integration visualization" className="w-full h-auto object-contain" />
                 </div>
               </div>
               <div className="w-full lg:w-[864px] bg-gradient-to-b from-[#161A1E] to-[#08090A] overflow-hidden rounded-[32px] border border-white flex flex-col justify-start items-start min-h-[400px] md:min-h-0">
