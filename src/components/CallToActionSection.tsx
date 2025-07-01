@@ -1,3 +1,4 @@
+
 import React from 'react';
 const CallToActionSection = () => {
   return (
@@ -21,11 +22,6 @@ const CallToActionSection = () => {
             </div>
           </div>
           <div className="w-full max-w-[1440px] h-[890px] relative bg-black overflow-hidden">
-            <img 
-              src="/lovable-uploads/aba49ea2-33d2-48ca-9230-1384265021e8.png" 
-              alt="Dashboard mockup" 
-              className="absolute inset-0 w-full h-full object-cover"
-            />
           </div>
         </div>
       </div>
