@@ -1,16 +1,15 @@
 
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Navbar from './Navbar';
-
 const HeroSection = () => {
-  return (
-    <div className="w-full min-h-screen overflow-hidden flex flex-col justify-start items-start relative" style={{
-      backgroundImage: 'url(/lovable-uploads/5c21d57e-d7fa-44a5-a13e-d85e12b669bf.png)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
-    }}>
+  return <div className="w-full min-h-screen overflow-hidden flex flex-col justify-start items-start relative" style={{
+    backgroundImage: 'url(/lovable-uploads/5c21d57e-d7fa-44a5-a13e-d85e12b669bf.png)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}>
       <Navbar />
       
       <div className="w-full px-4 md:px-16 lg:px-16 xl:px-16 py-14 md:py-28 overflow-hidden flex flex-col justify-start items-center gap-10 md:gap-20">
@@ -39,22 +38,22 @@ const HeroSection = () => {
           
           {/* Dashboard Mockup */}
           <div className="w-full max-w-7xl h-[400px] md:h-[600px] lg:h-[749px] relative overflow-hidden">
-            <div className="absolute inset-0 flex justify-center items-start pt-4 md:pt-6 bg-transparent">
+            <div className="absolute inset-0 flex justify-center items-start pt-4 md:pt-6">
               <div className="relative w-full max-w-[300px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1132px]">
                 {/* Main Dashboard Container */}
                 <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden flex flex-col justify-start items-start" style={{
-                  transform: 'translate(6px, 6px)',
-                  borderRadius: '10.89px'
-                }}>
-                  <div className="w-full h-full relative" style={{
-                    boxShadow: '0px 0px 45px rgba(118, 77, 253, 0.77)'
-                  }}>
-                    {/* Dashboard Image */}
-                    <img 
-                      src="/lovable-uploads/5f124f8a-efb5-4929-a382-d093f61ec07d.png" 
-                      alt="Dashboard Preview" 
-                      className="w-full h-full object-cover object-top rounded-lg"
-                    />
+                transform: 'translate(6px, 6px)',
+                borderRadius: '10.89px'
+              }}>
+                  <div className="w-full h-full bg-black relative">
+                    {/* Dashboard content placeholder */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 to-gray-900/40 flex items-center justify-center" style={{
+                      boxShadow: '0px 0px 45px rgba(118.07, 76.91, 253.31, 0.77)'
+                    }}>
+                      <div className="text-white/30 text-lg md:text-xl lg:text-2xl font-light">
+                        Dashboard Preview
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -62,13 +61,12 @@ const HeroSection = () => {
             
             {/* Bottom Gradient Overlay */}
             <div className="absolute bottom-0 left-0 w-full h-32 md:h-48 lg:h-80" style={{
-              background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.8) 100%)'
-            }} />
+            background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.8) 100%)'
+          }} />
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HeroSection;
+
