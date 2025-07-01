@@ -1,7 +1,17 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+
 const HeroSection = () => {
-  return <div className="w-full min-h-screen bg-black overflow-hidden flex flex-col justify-start items-start">
+  return (
+    <div 
+      className="w-full min-h-screen overflow-hidden flex flex-col justify-start items-start"
+      style={{
+        backgroundImage: 'url(/lovable-uploads/5c21d57e-d7fa-44a5-a13e-d85e12b669bf.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="w-full px-4 md:px-16 lg:px-16 xl:px-16 py-14 md:py-28 overflow-hidden flex flex-col justify-start items-center gap-10 md:gap-20">
         <div className="w-full max-w-7xl flex flex-col justify-start items-center gap-10 md:gap-20">
           {/* Header Content */}
@@ -70,11 +80,13 @@ const HeroSection = () => {
             
             {/* Bottom Gradient Overlay */}
             <div className="absolute bottom-0 left-0 w-full h-32 md:h-48 lg:h-80" style={{
-            background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, black 100%)'
+            background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.8) 100%)'
           }} />
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default HeroSection;
