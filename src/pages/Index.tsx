@@ -5,6 +5,7 @@ import FeaturesSection from '@/components/FeaturesSection';
 import StatisticsSection from '@/components/StatisticsSection';
 import CallToActionSection from '@/components/CallToActionSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <StatisticsSection />
       <CallToActionSection />
       <TestimonialsSection />
+      <Footer />
     </div>
   );
 };
