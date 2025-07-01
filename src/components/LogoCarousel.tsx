@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 const LogoCarousel = () => {
   // Array of 5 company logos with their styles
   const logoData = [
-    { name: 'Digitech', fontFamily: 'Poppins', fontWeight: '600' },
-    { name: 'Netdot', fontFamily: 'Epilogue', fontWeight: '700' },
-    { name: 'Sparkweb', fontFamily: 'Nunito', fontWeight: '800', hasIcon: true, iconType: 'rectangle' },
-    { name: 'Pixelpath', fontFamily: 'Prompt', fontWeight: '600', hasIcon: true, iconType: 'square' },
-    { name: 'CodeLine', fontFamily: 'Bitter', fontWeight: '700' }
+    { name: 'Digitech', fontFamily: 'Inter', fontWeight: '600' },
+    { name: 'Netdot', fontFamily: 'Inter', fontWeight: '700' },
+    { name: 'Sparkweb', fontFamily: 'Inter', fontWeight: '800', hasIcon: true, iconType: 'rectangle' },
+    { name: 'Pixelpath', fontFamily: 'Inter', fontWeight: '600', hasIcon: true, iconType: 'square' },
+    { name: 'CodeLine', fontFamily: 'Inter', fontWeight: '700' }
   ];
 
   // Triple the array for seamless looping
@@ -18,7 +18,7 @@ const LogoCarousel = () => {
   return (
     <div className="w-full overflow-hidden py-12 mt-20" style={{ backgroundColor: '#000000' }}>
       <motion.div
-        className="flex space-x-16"
+        className="flex"
         initial={{ opacity: 0, x: '0%' }}
         animate={{ 
           opacity: 1, 
@@ -33,7 +33,7 @@ const LogoCarousel = () => {
             delay: 0.5
           }
         }}
-        style={{ gap: '4rem' }}
+        style={{ gap: '20px' }}
       >
         {tripleLogos.map((logo, index) => (
           <div
