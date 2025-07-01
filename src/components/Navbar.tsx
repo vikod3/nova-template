@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -10,22 +9,13 @@ const Navbar = () => {
     name: 'Features',
     active: true
   }, {
-    name: 'Use Cases',
-    active: false
-  }, {
     name: 'Pricing',
-    active: false
-  }, {
-    name: 'Career',
     active: false
   }, {
     name: 'Blog',
     active: false
   }, {
     name: 'About Us',
-    active: false
-  }, {
-    name: 'FAQs',
     active: false
   }, {
     name: 'Contact',
