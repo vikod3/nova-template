@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Star } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -60,6 +61,27 @@ const TestimonialsSection = () => {
     }
   ];
 
+  // Double the testimonials array for seamless looping
+  const doubledTestimonials = [...testimonials, ...testimonials];
+
+  // Create animation variants for each column with different delays
+  const createColumnAnimation = (delay: number) => ({
+    initial: { opacity: 0, y: '0%' },
+    animate: {
+      opacity: 1,
+      y: '-50%',
+      transition: {
+        opacity: { duration: 0.5, delay },
+        y: {
+          duration: 20,
+          delay: delay + 0.5,
+          ease: 'linear',
+          repeat: Infinity,
+        }
+      }
+    }
+  });
+
   return (
     <div className="w-full bg-black overflow-hidden flex flex-col justify-start items-center">
       <div className="w-full py-16 md:py-24 flex flex-col justify-center items-center gap-12 md:gap-20">
@@ -72,33 +94,48 @@ const TestimonialsSection = () => {
             <div className="opacity-80 text-center text-white text-base md:text-lg font-normal leading-6 md:leading-[27px] font-sans">Find out why our users choose us and how our product has made a difference in their journey. Your success story could be the next one we feature!</div>
           </div>
           
-          <div className="relative w-full">
+          <div className="relative w-full h-[600px] overflow-hidden">
             {/* Gradient overlays */}
             <div className="absolute top-0 left-0 w-full h-[220px] bg-gradient-to-b from-black to-transparent z-10 pointer-events-none"></div>
             <div className="absolute bottom-0 left-0 w-full h-[220px] bg-gradient-to-t from-black to-transparent z-10 pointer-events-none"></div>
             
-            {/* Testimonials grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 auto-rows-fr">
+            {/* Animated testimonials grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 h-full">
               {/* First column */}
-              <div className="flex flex-col gap-8 pt-8">
-                {testimonials.slice(0, 3).map((testimonial, index) => (
-                  <TestimonialCard key={index} testimonial={testimonial} />
+              <motion.div 
+                className="flex flex-col gap-8"
+                variants={createColumnAnimation(0)}
+                initial="initial"
+                animate="animate"
+              >
+                {doubledTestimonials.slice(0, 6).map((testimonial, index) => (
+                  <TestimonialCard key={`col1-${index}`} testimonial={testimonial} />
                 ))}
-              </div>
+              </motion.div>
               
               {/* Second column */}
-              <div className="flex flex-col gap-8">
-                {testimonials.slice(3, 6).map((testimonial, index) => (
-                  <TestimonialCard key={index + 3} testimonial={testimonial} />
+              <motion.div 
+                className="flex flex-col gap-8"
+                variants={createColumnAnimation(0.2)}
+                initial="initial"
+                animate="animate"
+              >
+                {doubledTestimonials.slice(6, 12).map((testimonial, index) => (
+                  <TestimonialCard key={`col2-${index}`} testimonial={testimonial} />
                 ))}
-              </div>
+              </motion.div>
               
               {/* Third column */}
-              <div className="flex flex-col gap-8 pt-8">
-                {testimonials.slice(6, 9).map((testimonial, index) => (
-                  <TestimonialCard key={index + 6} testimonial={testimonial} />
+              <motion.div 
+                className="flex flex-col gap-8"
+                variants={createColumnAnimation(0.4)}
+                initial="initial"
+                animate="animate"
+              >
+                {doubledTestimonials.slice(12, 18).map((testimonial, index) => (
+                  <TestimonialCard key={`col3-${index}`} testimonial={testimonial} />
                 ))}
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -109,7 +146,7 @@ const TestimonialsSection = () => {
 
 const TestimonialCard = ({ testimonial }: { testimonial: any }) => {
   return (
-    <div className="p-8 bg-gradient-to-b from-[rgba(196,227,255,0.10)] to-[rgba(196,227,255,0.02)] bg-black rounded-2xl border border-[#C4E3FF] flex flex-col gap-8">
+    <div className="p-8 bg-gradient-to-b from-[rgba(196,227,255,0.10)] to-[rgba(196,227,255,0.02)] bg-black rounded-2xl border border-[#C4E3FF] flex flex-col gap-8 flex-shrink-0">
       <div className="flex flex-col gap-8">
         <div className="flex gap-1">
           {[...Array(5)].map((_, i) => (
