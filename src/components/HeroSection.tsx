@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Navbar from './Navbar';
@@ -47,9 +45,9 @@ const HeroSection = () => {
               }}>
                   <div className="w-full h-full bg-black relative">
                     {/* Dashboard content placeholder */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 to-gray-900/40 flex items-center justify-center" style={{
-                      boxShadow: '0px 0px 45px rgba(118.07, 76.91, 253.31, 0.77)'
-                    }}>
+                    <div style={{
+                    boxShadow: '0px 0px 45px rgba(118.07, 76.91, 253.31, 0.77)'
+                  }} className="absolute inset-0 bg-gradient-to-b from-gray-900/20 to-gray-900/40 flex items-center justify-center bg-zinc-900 shadow-[0_0_45px_0_rgba(118,77,253,0.77)]\n">
                       <div className="text-white/30 text-lg md:text-xl lg:text-2xl font-light">
                         Dashboard Preview
                       </div>
@@ -69,4 +67,3 @@ const HeroSection = () => {
     </div>;
 };
 export default HeroSection;
-
