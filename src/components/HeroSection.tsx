@@ -40,7 +40,7 @@ const HeroSection = () => {
                 boxShadow: '30px 30px 30px rgba(0,0,0,0.3)',
                 filter: 'blur(15px)',
                 transform: 'scale(1.1)'
-              }} className="absolute inset-0 rounded-lg bg-transparent" />
+              }} className="absolute inset-0 rounded-lg bg-[#3511c5]" />
                 <div className="absolute inset-0 rounded-lg" style={{
                 background: 'linear-gradient(207deg, #DAD1FF 0%, rgba(218, 209, 255, 0) 100%)',
                 boxShadow: '24px 24px 24px rgba(0,0,0,0.2)',
