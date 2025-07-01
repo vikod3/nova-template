@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="w-full px-4 md:px-16 lg:px-16 xl:px-16 py-14 md:py-28 overflow-hidden flex flex-col justify-start items-center gap-10 md:gap-20">
         <div className="w-full max-w-7xl flex flex-col justify-start items-center gap-10 md:gap-20">
           {/* Header Content */}
-          <div className="w-full max-w-3xl pt-8 md:pt-14 flex flex-col justify-start items-center gap-6 md:gap-8">
+          <div className="w-full max-w-3xl pt-8 md:pt-14 flex flex-col justify-start items-center gap-6 md:gap-8 py-[65px]">
             <div className="w-full flex flex-col justify-start items-center gap-4 md:gap-6">
               <h1 className="w-full text-center text-white text-3xl md:text-5xl lg:text-6xl font-normal leading-tight md:leading-none break-words font-sans">
                 Enhance your financial<br />control with Webfluin
