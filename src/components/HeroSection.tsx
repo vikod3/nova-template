@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Navbar from './Navbar';
+
 const HeroSection = () => {
   return <div className="w-full min-h-screen overflow-hidden flex flex-col justify-start items-start relative" style={{
     backgroundImage: 'url(/lovable-uploads/5c21d57e-d7fa-44a5-a13e-d85e12b669bf.png)',
@@ -64,11 +66,60 @@ const HeroSection = () => {
                 transform: 'translate(6px, 6px)',
                 borderRadius: '10.89px'
               }}>
-                  <div className="w-full h-full bg-black relative">
-                    {/* Dashboard content placeholder */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 to-gray-900/40 flex items-center justify-center">
-                      <div className="text-white/30 text-lg md:text-xl lg:text-2xl font-light">
-                        Dashboard Preview
+                  <div className="w-full h-full bg-white relative">
+                    {/* Dashboard Content */}
+                    <div className="absolute inset-0 p-6 md:p-8 lg:p-12 flex flex-col gap-6">
+                      {/* Header */}
+                      <div className="flex justify-between items-center">
+                        <h2 className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 font-sans">Dashboard</h2>
+                        <div className="w-8 h-8 rounded-full" style={{
+                          background: 'linear-gradient(180deg, #6445F5 0%, #4128BA 100%)'
+                        }}></div>
+                      </div>
+
+                      {/* Stats Cards */}
+                      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+                        <div className="bg-gray-50 rounded-lg p-3 md:p-4 border border-gray-100">
+                          <div className="text-xs md:text-sm text-gray-500 font-medium font-sans">Revenue</div>
+                          <div className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 font-sans">$24.5k</div>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-3 md:p-4 border border-gray-100">
+                          <div className="text-xs md:text-sm text-gray-500 font-medium font-sans">Users</div>
+                          <div className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 font-sans">1,245</div>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-3 md:p-4 border border-gray-100">
+                          <div className="text-xs md:text-sm text-gray-500 font-medium font-sans">Orders</div>
+                          <div className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 font-sans">342</div>
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-3 md:p-4 border border-gray-100">
+                          <div className="text-xs md:text-sm text-gray-500 font-medium font-sans">Growth</div>
+                          <div className="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800 font-sans">+12%</div>
+                        </div>
+                      </div>
+
+                      {/* Chart Area */}
+                      <div className="flex-1 bg-gray-50 rounded-lg border border-gray-100 p-4 md:p-6 flex items-center justify-center">
+                        <div className="flex flex-col items-center gap-2">
+                          <div className="w-full max-w-xs h-16 md:h-20 lg:h-24 flex items-end justify-between gap-1">
+                            <div className="w-2 md:w-3 bg-gray-300 rounded-sm" style={{ height: '40%' }}></div>
+                            <div className="w-2 md:w-3 rounded-sm" style={{ 
+                              height: '70%',
+                              background: 'linear-gradient(180deg, #6445F5 0%, #4128BA 100%)'
+                            }}></div>
+                            <div className="w-2 md:w-3 bg-gray-300 rounded-sm" style={{ height: '50%' }}></div>
+                            <div className="w-2 md:w-3 rounded-sm" style={{ 
+                              height: '85%',
+                              background: 'linear-gradient(180deg, #6445F5 0%, #4128BA 100%)'
+                            }}></div>
+                            <div className="w-2 md:w-3 bg-gray-300 rounded-sm" style={{ height: '30%' }}></div>
+                            <div className="w-2 md:w-3 rounded-sm" style={{ 
+                              height: '100%',
+                              background: 'linear-gradient(180deg, #6445F5 0%, #4128BA 100%)'
+                            }}></div>
+                            <div className="w-2 md:w-3 bg-gray-300 rounded-sm" style={{ height: '60%' }}></div>
+                          </div>
+                          <div className="text-xs md:text-sm text-gray-400 font-medium font-sans">Analytics Overview</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -85,4 +136,5 @@ const HeroSection = () => {
       </div>
     </div>;
 };
+
 export default HeroSection;
