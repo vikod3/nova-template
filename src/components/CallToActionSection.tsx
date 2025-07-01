@@ -25,7 +25,7 @@ const CallToActionSection = () => {
           <img 
             src="/lovable-uploads/aba49ea2-33d2-48ca-9230-1384265021e8.png" 
             alt="Abstract gradient background" 
-            className="w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
       </div>
