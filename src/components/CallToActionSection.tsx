@@ -22,7 +22,11 @@ const CallToActionSection = () => {
           </div>
         </div>
         <div className="w-full max-w-[1440px] h-[400px] md:h-[600px] lg:h-[890px] relative bg-black overflow-hidden mt-8 md:mt-12">
-          <div className="w-full h-full absolute mix-blend-hue bg-[#691EE4] transform -translate-x-6 translate-y-8 md:translate-y-16 scale-110"></div>
+          <img 
+            src="/lovable-uploads/aba49ea2-33d2-48ca-9230-1384265021e8.png" 
+            alt="Abstract gradient background" 
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </div>
