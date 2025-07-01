@@ -1,13 +1,16 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Navbar from './Navbar';
+
 const HeroSection = () => {
-  return <div className="w-full min-h-screen overflow-hidden flex flex-col justify-start items-start relative" style={{
-    backgroundImage: 'url(/lovable-uploads/5c21d57e-d7fa-44a5-a13e-d85e12b669bf.png)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
-  }}>
+  return (
+    <div className="w-full min-h-screen overflow-hidden flex flex-col justify-start items-start relative" style={{
+      backgroundImage: 'url(/lovable-uploads/5c21d57e-d7fa-44a5-a13e-d85e12b669bf.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
       <Navbar />
       
       <div className="w-full px-4 md:px-16 lg:px-16 xl:px-16 py-14 md:py-28 overflow-hidden flex flex-col justify-start items-center gap-10 md:gap-20">
@@ -16,7 +19,7 @@ const HeroSection = () => {
           <div className="w-full max-w-3xl pt-8 md:pt-14 flex flex-col justify-start items-center gap-6 md:gap-8">
             <div className="w-full flex flex-col justify-start items-center gap-4 md:gap-6">
               <h1 className="w-full text-center text-white text-3xl md:text-5xl lg:text-6xl font-normal leading-tight md:leading-none break-words font-sans">
-                Enhance your financial<br />control with Nexio
+                Enhance your financial<br />control with Webfluin
               </h1>
               <p className="w-full text-center text-white text-base md:text-lg font-normal leading-relaxed break-words font-sans">
                 Streamline your business's financial management with our intuitive, scalable SaaS platform. Designed for U.S. enterprises.
@@ -83,6 +86,8 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
+
 export default HeroSection;
