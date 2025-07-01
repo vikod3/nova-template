@@ -26,11 +26,16 @@ const CallToActionSection = () => {
       </div>
       
       <div 
-        className="w-full h-[962px] bg-cover bg-center bg-no-repeat"
+        className="w-full h-[962px] bg-cover bg-center bg-no-repeat flex items-center justify-center"
         style={{
           backgroundImage: `url('/lovable-uploads/ecd2dbc8-eb7b-4d3d-bfc8-d3543413d409.png')`
         }}
       >
+        <img 
+          src="/lovable-uploads/a3ef2038-5b9d-4b9e-a544-893b3471f305.png" 
+          alt="Purple gradient icon" 
+          className="w-auto h-auto max-w-full max-h-full object-contain"
+        />
       </div>
     </>
   );
