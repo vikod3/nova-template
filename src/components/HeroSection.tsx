@@ -86,6 +86,15 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      
+      {/* New full-width div block */}
+      <div className="w-full h-[534px]" style={{
+        backgroundImage: 'url(/lovable-uploads/5c21d57e-d7fa-44a5-a13e-d85e12b669bf.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+      </div>
     </div>
   );
 };
