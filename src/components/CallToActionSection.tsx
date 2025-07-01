@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 const CallToActionSection = () => {
   return (
@@ -20,8 +21,6 @@ const CallToActionSection = () => {
                 <div className="text-black text-base font-normal leading-6 font-['Roboto']">Get started</div>
               </div>
             </div>
-          </div>
-          <div className="w-full max-w-[1440px] h-[890px] relative bg-black overflow-hidden">
           </div>
         </div>
       </div>
