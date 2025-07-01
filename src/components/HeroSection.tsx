@@ -46,7 +46,9 @@ const HeroSection = () => {
                   transform: 'translate(6px, 6px)',
                   borderRadius: '10.89px'
                 }}>
-                  <div className="w-full h-full relative">
+                  <div className="w-full h-full relative" style={{
+                    boxShadow: '0px 0px 45px rgba(118, 77, 253, 0.77)'
+                  }}>
                     {/* Dashboard Image */}
                     <img 
                       src="/lovable-uploads/5f124f8a-efb5-4929-a382-d093f61ec07d.png" 
