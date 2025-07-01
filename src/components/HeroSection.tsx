@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Navbar from './Navbar';
@@ -36,20 +34,39 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Dashboard Mockup */}
+          {/* Dashboard Mockup with Gradient Effects */}
           <div className="w-full max-w-7xl h-[400px] md:h-[600px] lg:h-[749px] relative overflow-hidden">
             <div className="absolute inset-0 flex justify-center items-start pt-4 md:pt-6">
               <div className="relative w-full max-w-[300px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1132px]">
+                {/* Gradient Blur Effects */}
+                <div style={{
+                background: 'linear-gradient(209deg, #3511C5 0%, rgba(53, 17, 197, 0.60) 100%)',
+                boxShadow: '30px 30px 30px rgba(0,0,0,0.3)',
+                filter: 'blur(15px)',
+                transform: 'scale(1.1)'
+              }} className="absolute inset-0 rounded-lg bg-transparent" />
+                <div className="absolute inset-0 rounded-lg" style={{
+                background: 'linear-gradient(207deg, #DAD1FF 0%, rgba(218, 209, 255, 0) 100%)',
+                boxShadow: '24px 24px 24px rgba(0,0,0,0.2)',
+                filter: 'blur(12px)',
+                transform: 'translate(2px, 2px)'
+              }} />
+                <div className="absolute inset-0 rounded-lg" style={{
+                background: 'linear-gradient(207deg, #DAD1FF 0%, rgba(218, 209, 255, 0) 15%)',
+                boxShadow: '11px 11px 11px rgba(0,0,0,0.1)',
+                filter: 'blur(5.5px)',
+                borderRadius: '5px',
+                transform: 'translate(2px, 2px)'
+              }} />
+                
                 {/* Main Dashboard Container */}
-                <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden flex flex-col justify-start items-start" style={{
+                <div className="relative w-full aspect-[16/10] rounded-lg border border-white/16 overflow-hidden flex flex-col justify-start items-start" style={{
                 transform: 'translate(6px, 6px)',
                 borderRadius: '10.89px'
               }}>
                   <div className="w-full h-full bg-black relative">
                     {/* Dashboard content placeholder */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 to-gray-900/40 flex items-center justify-center" style={{
-                      boxShadow: '0px 0px 45px rgba(118.07, 76.91, 253.31, 0.77)'
-                    }}>
+                    <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 to-gray-900/40 flex items-center justify-center">
                       <div className="text-white/30 text-lg md:text-xl lg:text-2xl font-light">
                         Dashboard Preview
                       </div>
@@ -69,4 +86,3 @@ const HeroSection = () => {
     </div>;
 };
 export default HeroSection;
-
