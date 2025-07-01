@@ -1,3 +1,4 @@
+
 import React from 'react';
 const FeaturesSection = () => {
   return <div className="w-full h-full px-4 md:px-16 py-16 md:py-28 bg-black overflow-hidden flex flex-col justify-start items-center gap-12 md:gap-20">
@@ -62,7 +63,9 @@ const FeaturesSection = () => {
                 </div>
               </div>
               <div className="w-full lg:w-[864px] bg-gradient-to-b from-[#161A1E] to-[#08090A] overflow-hidden rounded-[32px] border border-white flex flex-col justify-start items-start min-h-[400px] md:min-h-0">
-                <div className="self-stretch h-48 md:h-[306px]"></div>
+                <div className="self-stretch flex items-center justify-center overflow-hidden">
+                  <img src="/lovable-uploads/6f1d8fae-f221-48b9-8563-1a3a0c19843a.png" alt="Income visualization" className="w-full h-auto object-contain" />
+                </div>
                 <div className="self-stretch p-6 md:p-12 flex flex-col justify-center items-center gap-6 md:gap-8 flex-1">
                   <div className="w-full max-w-3xl flex flex-col justify-start items-start gap-2">
                     <div className="self-stretch flex flex-col justify-start items-start gap-4 md:gap-6">
