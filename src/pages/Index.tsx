@@ -4,6 +4,7 @@ import CompanyLogos from '@/components/CompanyLogos';
 import FeaturesSection from '@/components/FeaturesSection';
 import StatisticsSection from '@/components/StatisticsSection';
 import CallToActionSection from '@/components/CallToActionSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <FeaturesSection />
       <StatisticsSection />
       <CallToActionSection />
+      <TestimonialsSection />
     </div>
   );
 };
