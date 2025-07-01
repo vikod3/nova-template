@@ -32,7 +32,7 @@ const Navbar = () => {
   return <nav className="absolute top-4 left-4 right-4 z-50">
       <div style={{
       background: 'rgba(21, 22, 26, 0.80)'
-    }} className="w-full px-4 py-3 rounded-2xl border border-white/12 backdrop-blur-[20px] flex justify-between items-center">
+    }} className="w-full px-4 py-3 rounded-2xl border border-white/12 backdrop-blur-[20px] flex justify-between items-center\n">
         {/* Logo and Brand */}
         <div className="flex items-center gap-7">
           <div className="flex items-center gap-3">
