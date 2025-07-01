@@ -16,9 +16,9 @@ const LogoCarousel = () => {
   const tripleLogos = [...logoImages, ...logoImages, ...logoImages];
 
   return (
-    <div className="w-full overflow-hidden bg-background/50 backdrop-blur py-12 mt-20">
+    <div className="w-full overflow-hidden bg-black py-8 md:py-12 mt-12 md:mt-20">
       <motion.div 
-        className="flex space-x-16 gap-16"
+        className="flex space-x-8 md:space-x-16 gap-8 md:gap-16"
         initial={{ opacity: 0, x: '0%' }}
         animate={{ 
           opacity: 1, 
@@ -39,7 +39,7 @@ const LogoCarousel = () => {
             key={index}
             src={logoPath}
             alt={`Logo ${index + 1}`}
-            className="h-8 object-contain flex-shrink-0"
+            className="h-6 md:h-8 object-contain flex-shrink-0"
           />
         ))}
       </motion.div>
