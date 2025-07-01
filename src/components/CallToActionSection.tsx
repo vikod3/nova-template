@@ -1,9 +1,6 @@
-
 import React from 'react';
-
 const CallToActionSection = () => {
-  return (
-    <div className="w-full h-full px-4 md:px-16 py-16 md:py-28 bg-black overflow-hidden flex flex-col justify-start items-center gap-12 md:gap-20">
+  return <div className="w-full h-full px-4 md:px-16 py-16 md:py-28 bg-black overflow-hidden flex flex-col justify-start items-center gap-12 md:gap-20">
       <div className="w-full max-w-[1280px] flex flex-col justify-start items-center">
         <div className="w-full max-w-[768px] flex flex-col justify-start items-center gap-6 md:gap-8">
           <div className="self-stretch flex flex-col justify-start items-center gap-6">
@@ -21,16 +18,8 @@ const CallToActionSection = () => {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-[1440px] h-[400px] md:h-[600px] lg:h-[890px] relative bg-black overflow-hidden mt-8 md:mt-12">
-          <img 
-            src="/lovable-uploads/aba49ea2-33d2-48ca-9230-1384265021e8.png" 
-            alt="Abstract gradient background" 
-            className="absolute inset-0 w-full h-full object-cover"
-          />
-        </div>
+        
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default CallToActionSection;
