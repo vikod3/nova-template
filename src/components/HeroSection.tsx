@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Navbar from './Navbar';
@@ -44,7 +43,7 @@ const HeroSection = () => {
                 transform: 'translate(6px, 6px)',
                 borderRadius: '10.89px'
               }}>
-                  <div className="w-full h-full bg-black relative">
+                  <div className="w-full h-full relative">
                     {/* Dashboard image */}
                     <div className="absolute inset-0 bg-gradient-to-b from-gray-900/20 to-gray-900/40 flex items-center justify-center bg-zinc-900 shadow-[0_0_45px_0_rgba(118,77,253,0.77)]">
                       <img 
