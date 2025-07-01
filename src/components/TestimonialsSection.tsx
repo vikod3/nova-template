@@ -64,8 +64,8 @@ const TestimonialsSection = () => {
   // Double the testimonials array for seamless looping
   const doubledTestimonials = [...testimonials, ...testimonials];
 
-  // Create animation variants for each column with different delays
-  const createColumnAnimation = (delay: number) => ({
+  // Create animation variants for each column with different delays and speeds
+  const createColumnAnimation = (delay: number, duration: number = 20) => ({
     initial: { opacity: 0, y: '0%' },
     animate: {
       opacity: 1,
@@ -73,7 +73,7 @@ const TestimonialsSection = () => {
       transition: {
         opacity: { duration: 0.5, delay },
         y: {
-          duration: 20,
+          duration: duration,
           delay: delay + 0.5,
           ease: 'linear',
           repeat: Infinity,
@@ -101,10 +101,10 @@ const TestimonialsSection = () => {
             
             {/* Animated testimonials grid */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 h-full">
-              {/* First column */}
+              {/* First column - normal speed */}
               <motion.div 
                 className="flex flex-col gap-8"
-                variants={createColumnAnimation(0)}
+                variants={createColumnAnimation(0, 20)}
                 initial="initial"
                 animate="animate"
               >
@@ -113,10 +113,10 @@ const TestimonialsSection = () => {
                 ))}
               </motion.div>
               
-              {/* Second column */}
+              {/* Second column - slower speed */}
               <motion.div 
                 className="flex flex-col gap-8"
-                variants={createColumnAnimation(0.2)}
+                variants={createColumnAnimation(0.2, 30)}
                 initial="initial"
                 animate="animate"
               >
@@ -125,10 +125,10 @@ const TestimonialsSection = () => {
                 ))}
               </motion.div>
               
-              {/* Third column */}
+              {/* Third column - normal speed */}
               <motion.div 
                 className="flex flex-col gap-8"
-                variants={createColumnAnimation(0.4)}
+                variants={createColumnAnimation(0.4, 20)}
                 initial="initial"
                 animate="animate"
               >
