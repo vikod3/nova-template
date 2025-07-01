@@ -1,4 +1,3 @@
-
 import React from 'react';
 const FeaturesSection = () => {
   return <div className="w-full h-full px-4 md:px-16 py-16 md:py-28 bg-black overflow-hidden flex flex-col justify-start items-center gap-12 md:gap-20">
@@ -58,7 +57,7 @@ const FeaturesSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch flex-1 flex items-center justify-center p-4">
+                <div className="self-stretch flex-1 flex items-center justify-center p-4 py-0 px-0">
                   <img src="/lovable-uploads/02d36b81-7505-4a5b-9e63-1735894bbb66.png" alt="Data integration visualization" className="w-full h-full object-contain" />
                 </div>
               </div>
