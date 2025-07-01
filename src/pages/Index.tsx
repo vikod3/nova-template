@@ -17,6 +17,17 @@ const Index = () => {
       <CallToActionSection />
       <TestimonialsSection />
       <Footer />
+      
+      {/* New full-width div block with gradient background */}
+      <div 
+        className="w-full h-[534px]" 
+        style={{
+          backgroundImage: 'url(/lovable-uploads/920baf6a-ca4a-4dab-ac22-c6616b8b2705.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
     </div>
   );
 };
