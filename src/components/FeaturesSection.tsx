@@ -34,7 +34,7 @@ const FeaturesSection = () => {
                   <div className="self-stretch flex flex-col justify-center items-center gap-2">
                     <div className="self-stretch flex flex-col justify-start items-start gap-3 md:gap-4">
                       <div className="self-stretch text-center text-white text-2xl md:text-2xl font-medium leading-tight md:leading-[41.60px] font-sans">Link Your Accounts</div>
-                      <div className="self-stretch opacity-80 text-center text-white text-sm md:text-base font-normal leading-5 md:leading-6 font-sans">Create your account in minutes and tailor the platform to meet your company's unique financial needs.</div>
+                      <div className="self-stretch opacity-80 text-center text-white text-sm md:text-base font-normal leading-5 md:leading-6 font-sans">Create your account in minutes and tailor the platform to meet your company's unique financial ne3ds.</div>
                     </div>
                   </div>
                 </div>
