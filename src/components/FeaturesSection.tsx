@@ -20,11 +20,7 @@ const FeaturesSection = () => {
             <div className="self-stretch flex flex-col lg:flex-row justify-start items-start gap-6 md:gap-8">
               <div className="w-full lg:w-[864px] bg-gradient-to-b from-[#161A1E] to-[#08090A] overflow-hidden rounded-[32px] border border-white flex flex-col justify-start items-start min-h-[400px] md:min-h-0">
                 <div className="self-stretch h-48 md:h-[306px] flex items-center justify-center overflow-hidden">
-                  <img 
-                    src="/lovable-uploads/7fa88b56-5484-49f5-a508-dfd60325bba4.png" 
-                    alt="Analytics chart visualization" 
-                    className="w-full h-full object-cover"
-                  />
+                  <img src="/lovable-uploads/7fa88b56-5484-49f5-a508-dfd60325bba4.png" alt="Analytics chart visualization" className="w-full h-full object-cover" />
                 </div>
                 <div className="self-stretch p-6 md:p-12 flex flex-col justify-start items-start gap-6 md:gap-8 flex-1">
                   <div className="w-full max-w-3xl flex flex-col justify-center items-center gap-2">
@@ -44,12 +40,8 @@ const FeaturesSection = () => {
                     </div>
                   </div>
                 </div>
-                <div className="self-stretch flex-1 flex items-center justify-center p-6">
-                  <img 
-                    src="/lovable-uploads/b83a5e37-deef-435b-8cc2-ba4c3e283575.png" 
-                    alt="Dashboard visualization" 
-                    className="w-full h-full object-contain"
-                  />
+                <div className="self-stretch flex-1 flex items-center justify-center p-0 px-0 py-[0px]">
+                  <img src="/lovable-uploads/b83a5e37-deef-435b-8cc2-ba4c3e283575.png" alt="Dashboard visualization" className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
