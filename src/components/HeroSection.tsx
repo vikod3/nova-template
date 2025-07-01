@@ -1,16 +1,13 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import Navbar from './Navbar';
-
 const HeroSection = () => {
-  return (
-    <div className="w-full min-h-screen overflow-hidden flex flex-col justify-start items-start relative" style={{
-      backgroundImage: 'url(/lovable-uploads/5c21d57e-d7fa-44a5-a13e-d85e12b669bf.png)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat'
-    }}>
+  return <div className="w-full min-h-screen overflow-hidden flex flex-col justify-start items-start relative" style={{
+    backgroundImage: 'url(/lovable-uploads/5c21d57e-d7fa-44a5-a13e-d85e12b669bf.png)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}>
       <Navbar />
       
       <div className="w-full px-4 md:px-16 lg:px-16 xl:px-16 py-14 md:py-28 overflow-hidden flex flex-col justify-start items-center gap-10 md:gap-20">
@@ -86,8 +83,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HeroSection;
