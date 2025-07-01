@@ -64,24 +64,6 @@ const TestimonialsSection = () => {
   // Double the testimonials array for seamless looping
   const doubledTestimonials = [...testimonials, ...testimonials];
 
-  // Create animation variants for each column with different delays and speeds
-  const createColumnAnimation = (delay: number, duration: number = 20) => ({
-    initial: { opacity: 0, y: '0%' },
-    animate: {
-      opacity: 1,
-      y: '-50%',
-      transition: {
-        opacity: { duration: 0.5, delay },
-        y: {
-          duration: duration,
-          delay: delay + 0.5,
-          ease: 'linear',
-          repeat: Infinity,
-        }
-      }
-    }
-  });
-
   return (
     <div className="w-full bg-black overflow-hidden flex flex-col justify-start items-center">
       <div className="w-full py-16 md:py-24 flex flex-col justify-center items-center gap-12 md:gap-20">
@@ -104,9 +86,20 @@ const TestimonialsSection = () => {
               {/* First column - normal speed */}
               <motion.div 
                 className="flex flex-col gap-8"
-                variants={createColumnAnimation(0, 20)}
-                initial="initial"
-                animate="animate"
+                initial={{ opacity: 0, y: '0%' }}
+                animate={{ 
+                  opacity: 1, 
+                  y: '-50%' 
+                }}
+                transition={{
+                  opacity: { duration: 0.5, delay: 0 },
+                  y: {
+                    duration: 20,
+                    delay: 0.5,
+                    ease: "linear",
+                    repeat: Infinity,
+                  }
+                }}
               >
                 {doubledTestimonials.slice(0, 6).map((testimonial, index) => (
                   <TestimonialCard key={`col1-${index}`} testimonial={testimonial} />
@@ -116,9 +109,20 @@ const TestimonialsSection = () => {
               {/* Second column - slower speed */}
               <motion.div 
                 className="flex flex-col gap-8"
-                variants={createColumnAnimation(0.2, 30)}
-                initial="initial"
-                animate="animate"
+                initial={{ opacity: 0, y: '0%' }}
+                animate={{ 
+                  opacity: 1, 
+                  y: '-50%' 
+                }}
+                transition={{
+                  opacity: { duration: 0.5, delay: 0.2 },
+                  y: {
+                    duration: 30,
+                    delay: 0.7,
+                    ease: "linear",
+                    repeat: Infinity,
+                  }
+                }}
               >
                 {doubledTestimonials.slice(6, 12).map((testimonial, index) => (
                   <TestimonialCard key={`col2-${index}`} testimonial={testimonial} />
@@ -128,9 +132,20 @@ const TestimonialsSection = () => {
               {/* Third column - normal speed */}
               <motion.div 
                 className="flex flex-col gap-8"
-                variants={createColumnAnimation(0.4, 20)}
-                initial="initial"
-                animate="animate"
+                initial={{ opacity: 0, y: '0%' }}
+                animate={{ 
+                  opacity: 1, 
+                  y: '-50%' 
+                }}
+                transition={{
+                  opacity: { duration: 0.5, delay: 0.4 },
+                  y: {
+                    duration: 20,
+                    delay: 0.9,
+                    ease: "linear",
+                    repeat: Infinity,
+                  }
+                }}
               >
                 {doubledTestimonials.slice(12, 18).map((testimonial, index) => (
                   <TestimonialCard key={`col3-${index}`} testimonial={testimonial} />
