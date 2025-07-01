@@ -36,7 +36,7 @@ const HeroSection = () => {
           
           {/* Dashboard Mockup with Gradient Effects */}
           <div className="w-full max-w-7xl h-[400px] md:h-[600px] lg:h-[749px] relative overflow-hidden">
-            <div className="absolute inset-0 flex justify-center items-start pt-4 md:pt-6">
+            <div className="absolute inset-0 flex justify-center items-start pt-4 md:pt-6 bg-transparent">
               <div className="relative w-full max-w-[300px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[900px] xl:max-w-[1132px]">
                 {/* Gradient Blur Effects */}
                 <div style={{
@@ -51,13 +51,13 @@ const HeroSection = () => {
                 filter: 'blur(12px)',
                 transform: 'translate(2px, 2px)'
               }} />
-                <div className="absolute inset-0 rounded-lg" style={{
+                <div style={{
                 background: 'linear-gradient(207deg, #DAD1FF 0%, rgba(218, 209, 255, 0) 15%)',
                 boxShadow: '11px 11px 11px rgba(0,0,0,0.1)',
                 filter: 'blur(5.5px)',
                 borderRadius: '5px',
                 transform: 'translate(2px, 2px)'
-              }} />
+              }} className="absolute inset-0 rounded-lg bg-[#342270]" />
                 
                 {/* Main Dashboard Container */}
                 <div className="relative w-full aspect-[16/10] rounded-lg border border-white/16 overflow-hidden flex flex-col justify-start items-start" style={{
