@@ -1,9 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-
 const HeroSection = () => {
-  return (
-    <div className="w-full min-h-screen bg-black overflow-hidden flex flex-col justify-start items-start">
+  return <div className="w-full min-h-screen bg-black overflow-hidden flex flex-col justify-start items-start">
       <div className="w-full px-4 md:px-16 lg:px-16 xl:px-16 py-14 md:py-28 overflow-hidden flex flex-col justify-start items-center gap-10 md:gap-20">
         <div className="w-full max-w-7xl flex flex-col justify-start items-center gap-10 md:gap-20">
           {/* Header Content */}
@@ -38,7 +36,7 @@ const HeroSection = () => {
                 boxShadow: '30px 30px 30px rgba(0,0,0,0.3)',
                 filter: 'blur(15px)',
                 transform: 'scale(1.1)'
-              }} className="absolute inset-0 rounded-lg bg-[#3511c5]" />
+              }} className="absolute inset-0 rounded-lg bg-transparent" />
                 <div className="absolute inset-0 rounded-lg" style={{
                 background: 'linear-gradient(207deg, #DAD1FF 0%, rgba(218, 209, 255, 0) 100%)',
                 boxShadow: '24px 24px 24px rgba(0,0,0,0.2)',
@@ -77,8 +75,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default HeroSection;
