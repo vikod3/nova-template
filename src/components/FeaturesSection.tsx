@@ -19,7 +19,13 @@ const FeaturesSection = () => {
           <div className="self-stretch flex flex-col justify-start items-start gap-6 md:gap-8">
             <div className="self-stretch flex flex-col lg:flex-row justify-start items-start gap-6 md:gap-8">
               <div className="w-full lg:w-[864px] bg-gradient-to-b from-[#161A1E] to-[#08090A] overflow-hidden rounded-[32px] border border-white flex flex-col justify-start items-start min-h-[400px] md:min-h-0">
-                <div className="self-stretch h-48 md:h-[306px] bg-black"></div>
+                <div className="self-stretch h-48 md:h-[306px] bg-black flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/7fa88b56-5484-49f5-a508-dfd60325bba4.png" 
+                    alt="Analytics chart visualization" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <div className="self-stretch p-6 md:p-12 flex flex-col justify-start items-start gap-6 md:gap-8 flex-1">
                   <div className="w-full max-w-3xl flex flex-col justify-center items-center gap-2">
                     <div className="self-stretch flex flex-col justify-start items-start gap-4 md:gap-6">
