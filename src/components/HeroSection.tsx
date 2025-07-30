@@ -22,8 +22,7 @@ const HeroSection = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
-        ease: "easeOut"
+        duration: 0.6
       }
     }
   };
@@ -36,8 +35,7 @@ const HeroSection = () => {
       scale: 1,
       transition: {
         duration: 0.8,
-        delay: 0.6,
-        ease: "easeOut"
+        delay: 0.6
       }
     }
   };
@@ -49,6 +47,18 @@ const HeroSection = () => {
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
     }}>
+      {/* Background Video Layer */}
+      <video 
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ mixBlendMode: 'color-dodge' }}
+        autoPlay
+        muted
+        loop
+        playsInline
+        controls={false}
+      >
+        <source src="https://res.cloudinary.com/dqd4dvem7/video/upload/v1753854818/grid_3_ijdld4.mp4" type="video/mp4" />
+      </video>
       <Navbar />
       
       <div className="w-full px-4 md:px-16 lg:px-16 xl:px-16 py-14 md:py-28 overflow-hidden flex flex-col justify-start items-center gap-10 md:gap-20">
