@@ -22,7 +22,8 @@ const HeroSection = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6
+        duration: 0.6,
+        ease: "easeOut"
       }
     }
   };
@@ -35,7 +36,8 @@ const HeroSection = () => {
       scale: 1,
       transition: {
         duration: 0.8,
-        delay: 0.6
+        delay: 0.6,
+        ease: "easeOut"
       }
     }
   };
@@ -57,7 +59,7 @@ const HeroSection = () => {
         playsInline
         controls={false}
       >
-        <source src="https://res.cloudinary.com/dqd4dvem7/video/upload/v1753854818/grid_3_ijdld4.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dqd4dvem7/video/upload/v1753690677/grid_1_m37hvl.mp4" type="video/mp4" />
       </video>
       <Navbar />
       
