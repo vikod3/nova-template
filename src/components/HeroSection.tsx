@@ -59,7 +59,7 @@ const HeroSection = () => {
         playsInline
         controls={false}
       >
-        <source src="https://res.cloudinary.com/dqd4dvem7/video/upload/v1753690853/arc_n2w6lv.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dqd4dvem7/video/upload/v1753690677/grid_1_m37hvl.mp4" type="video/mp4" />
       </video>
       <Navbar />
       
